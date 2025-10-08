@@ -17,24 +17,32 @@
 
 ---
 
-## 📸 Screenshots
+## 📸 Demo Showcase
 
 <div align="center">
 
-### Main Interface
-![Main Interface](screenshots/screenshot-main.png)
+### 🎬 Interactive Demo
+Experience all features in action! Click through the demo frames below to see the full functionality:
 
-### Reading Modes
-![Night Mode](screenshots/screenshot-night-mode.png)
-![Relax Mode](screenshots/screenshot-relax-mode.png)
+#### 1. Main Interface
+![Main Interface](screenshots/demo-frame-1-main.png)
+*Clean, modern interface with glassmorphism design and toggle panel*
 
-### Interactive Features
-![Random Color](screenshots/screenshot-random-color.png)
+#### 2. About Modal
+![About Modal](screenshots/demo-frame-2-about.png)
+*Comprehensive developer information and project details*
 
-### Modals & Panels
-![About Modal](screenshots/screenshot-about-modal.png)
-![Settings Modal](screenshots/screenshot-settings-modal.png)
-![Install Panel](screenshots/screenshot-install-panel.png)
+#### 3. Install Panel
+![Install Panel](screenshots/demo-frame-3-install.png)
+*Beautiful right-sliding PWA installation panel*
+
+#### 4. Random Color Feature
+![Random Color](screenshots/demo-frame-6-random.png)
+*One-click random color generation with dice button*
+
+#### 5. Settings Modal
+![Settings Modal](screenshots/demo-frame-7-settings.png)
+*Complete settings panel with various options*
 
 </div>
 
