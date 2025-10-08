@@ -22,15 +22,18 @@
 <div align="center">
 
 ### Main Interface
-![Main Interface](screenshots/screenshot-main.png)
+![Main Interface](screenshots/screenshot-main-updated.png)
 
-### Night Mode
+### Reading Modes
 ![Night Mode](screenshots/screenshot-night-mode.png)
-
-### Relax Mode  
 ![Relax Mode](screenshots/screenshot-relax-mode.png)
 
-### Settings Modal
+### Interactive Features
+![Random Color](screenshots/screenshot-random-color.png)
+![Panel Hidden](screenshots/screenshot-panel-hidden.png)
+![Fullscreen Mode](screenshots/screenshot-fullscreen.png)
+
+### Settings
 ![Settings Modal](screenshots/screenshot-settings-modal.png)
 
 </div>
@@ -57,6 +60,8 @@
 
 ### ⚡ **Lightning Fast Controls**
 - **One-Touch Access** - Quick controls for instant adjustments
+- **Random Color Generator** - Dice button for surprise colors
+- **Panel Toggle** - Hide/show controls with one click
 - **Keyboard Shortcuts** - Full keyboard navigation support
 - **Smart Memory** - Remembers your preferences automatically
 

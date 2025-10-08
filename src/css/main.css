@@ -758,6 +758,12 @@ body {
     background: var(--accent-hover);
 }
 
+.install-prompt span {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
     * {

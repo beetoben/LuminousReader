@@ -56,7 +56,6 @@ class LuminousReader {
         document.getElementById('togglePanel').addEventListener('click', () => this.togglePanel());
         document.getElementById('powerBtn').addEventListener('click', () => this.togglePower());
         document.getElementById('randomColor').addEventListener('click', () => this.setRandomColor());
-        document.getElementById('savePreset').addEventListener('click', () => this.savePreset());
 
         // Header controls
         document.getElementById('fullscreen-btn').addEventListener('click', () => this.toggleFullscreen());
@@ -151,17 +150,6 @@ class LuminousReader {
         this.showNotification('Random color selected', 'info');
     }
 
-    savePreset() {
-        const preset = {
-            color: this.currentColor,
-            brightness: this.currentBrightness,
-            effect: this.currentEffect,
-            mode: this.currentMode
-        };
-        
-        localStorage.setItem('luminousPreset', JSON.stringify(preset));
-        this.showNotification('Settings saved', 'success');
-    }
 
     loadPreset() {
         const saved = localStorage.getItem('luminousPreset');
