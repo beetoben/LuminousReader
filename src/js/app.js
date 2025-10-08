@@ -58,6 +58,7 @@ class LuminousReader {
         document.getElementById('randomColor').addEventListener('click', () => this.setRandomColor());
 
         // Header controls
+        document.getElementById('install-app-btn').addEventListener('click', () => this.showInstallPrompt());
         document.getElementById('fullscreen-btn').addEventListener('click', () => this.toggleFullscreen());
         document.getElementById('settings-btn').addEventListener('click', () => this.openSettings());
 
@@ -372,7 +373,7 @@ class LuminousReader {
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
             deferredPrompt = e;
-            this.showInstallPrompt();
+            // Don't show automatically, let user decide
         });
 
         window.addEventListener('appinstalled', () => {
@@ -387,10 +388,13 @@ class LuminousReader {
             prompt.id = 'installPrompt';
             prompt.className = 'install-prompt';
             prompt.innerHTML = `
-                <i class="fas fa-download"></i>
-                <span>Add Luminous Reader to home screen</span>
-                <button id="installBtn">Install</button>
-                <button id="dismissBtn">Later</button>
+                <i class="fas fa-mobile-alt"></i>
+                <span>Install Luminous Reader</span>
+                <span style="font-size: 0.9rem; color: var(--text-secondary); margin-top: -0.5rem;">Add to your home screen for quick access</span>
+                <div class="prompt-buttons">
+                    <button id="installBtn">Install</button>
+                    <button id="dismissBtn">Close</button>
+                </div>
             `;
             document.body.appendChild(prompt);
 
@@ -403,7 +407,7 @@ class LuminousReader {
                 prompt.remove();
             });
 
-            setTimeout(() => prompt.classList.add('show'), 1000);
+            setTimeout(() => prompt.classList.add('show'), 100);
         }
     }
 

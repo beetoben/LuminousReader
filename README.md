@@ -33,8 +33,9 @@
 ![Panel Hidden](screenshots/screenshot-panel-hidden.png)
 ![Fullscreen Mode](screenshots/screenshot-fullscreen.png)
 
-### Settings
+### Settings & PWA
 ![Settings Modal](screenshots/screenshot-settings-modal.png)
+![Install Prompt](screenshots/screenshot-install-prompt.png)
 
 </div>
 
@@ -100,9 +101,11 @@ npx live-server --port=3000
 
 ### 📱 **Install as PWA**
 1. Open the app in your browser
-2. Look for the "Install" prompt
-3. Click "Install" to add to your home screen
+2. Click the **Install** button in the header (📥 icon)
+3. Click "Install" in the popup to add to your home screen
 4. Enjoy native app experience!
+
+**💡 Tip:** The install prompt is now manually triggered for better user control!
 
 ---
 

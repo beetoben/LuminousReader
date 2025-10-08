@@ -720,48 +720,83 @@ body {
 /* PWA Install Prompt */
 .install-prompt {
     position: fixed;
-    bottom: 6rem;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--border-radius);
-    padding: 1rem 1.5rem;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.1) 100%);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 20px;
+    padding: 2rem 2.5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     z-index: 1001;
-    box-shadow: var(--shadow-heavy);
+    box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
     opacity: 0;
     visibility: hidden;
-    transition: var(--transition);
+    transition: all 0.4s ease;
+    min-width: 320px;
+    text-align: center;
 }
 
 .install-prompt.show {
     opacity: 1;
     visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.install-prompt i {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.install-prompt span {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.install-prompt .prompt-buttons {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
 }
 
 .install-prompt button {
     background: var(--accent-color);
     border: none;
-    color: var(--text-primary);
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
     cursor: pointer;
-    font-size: 0.9rem;
-    transition: var(--transition);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    min-width: 100px;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
 }
 
 .install-prompt button:hover {
     background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
 }
 
-.install-prompt span {
+.install-prompt button:last-child {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.install-prompt button:last-child:hover {
+    background: rgba(255, 255, 255, 0.15);
     color: var(--text-primary);
-    font-size: 0.9rem;
-    font-weight: 500;
 }
 
 /* Reduced motion */
