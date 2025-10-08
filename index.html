@@ -22,6 +22,9 @@
                 <span>Luminous Reader</span>
             </div>
             <div class="header-controls">
+                <button class="control-btn" id="about-btn" title="About">
+                    <i class="fas fa-info-circle"></i>
+                </button>
                 <button class="control-btn" id="install-app-btn" title="Install App">
                     <i class="fas fa-download"></i>
                 </button>
@@ -149,6 +152,90 @@
                     <div class="setting-group">
                         <label>Keyboard Shortcuts</label>
                         <input type="checkbox" id="keyboardShortcuts" checked>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Modal -->
+        <div id="aboutModal" class="modal">
+            <div class="modal-content about-modal">
+                <div class="modal-header">
+                    <h2><i class="fas fa-info-circle"></i> About Luminous Reader</h2>
+                    <button class="close-btn" id="closeAbout">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="about-content">
+                        <div class="about-logo">
+                            <img src="src/assets/images/logo.svg" alt="Luminous Reader Logo" class="about-logo-img">
+                            <h3>Luminous Reader</h3>
+                            <p class="version">Version 1.0.0</p>
+                        </div>
+                        
+                        <div class="about-description">
+                            <p>A modern, elite reading lamp application that transforms your monitor into a beautiful reading light. Perfect for reading physical books in dark environments without turning on room lights.</p>
+                        </div>
+
+                        <div class="about-features">
+                            <h4><i class="fas fa-star"></i> Key Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Multiple reading modes (Focus, Relax, Night, Study)</li>
+                                <li><i class="fas fa-check"></i> Customizable colors and brightness</li>
+                                <li><i class="fas fa-check"></i> Progressive Web App (PWA) support</li>
+                                <li><i class="fas fa-check"></i> Responsive design for all devices</li>
+                                <li><i class="fas fa-check"></i> Keyboard shortcuts</li>
+                                <li><i class="fas fa-check"></i> Glassmorphism UI design</li>
+                            </ul>
+                        </div>
+
+                        <div class="about-contact">
+                            <h4><i class="fas fa-user"></i> Developer</h4>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Berkay Çiftçi</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:berkayyasinciftci@gmail.com">berkayyasinciftci@gmail.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fab fa-github"></i>
+                                    <a href="https://github.com/berkay-c" target="_blank">github.com/berkay-c</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fab fa-linkedin"></i>
+                                    <a href="https://www.linkedin.com/in/berkay-c" target="_blank">linkedin.com/in/berkay-c</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-links">
+                            <h4><i class="fas fa-link"></i> Project Links</h4>
+                            <div class="project-links">
+                                <a href="https://github.com/berkay-c/LuminousReader" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub Repository</span>
+                                </a>
+                                <a href="https://berkay-c.github.io/LuminousReader" target="_blank" class="project-link">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="about-tech">
+                            <h4><i class="fas fa-code"></i> Built With</h4>
+                            <div class="tech-stack">
+                                <span class="tech-item">HTML5</span>
+                                <span class="tech-item">CSS3</span>
+                                <span class="tech-item">JavaScript</span>
+                                <span class="tech-item">PWA</span>
+                                <span class="tech-item">Glassmorphism</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

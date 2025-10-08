@@ -22,7 +22,7 @@
 <div align="center">
 
 ### Main Interface
-![Main Interface](screenshots/screenshot-main-updated.png)
+![Main Interface](screenshots/screenshot-main.png)
 
 ### Reading Modes
 ![Night Mode](screenshots/screenshot-night-mode.png)
@@ -30,12 +30,11 @@
 
 ### Interactive Features
 ![Random Color](screenshots/screenshot-random-color.png)
-![Panel Hidden](screenshots/screenshot-panel-hidden.png)
-![Fullscreen Mode](screenshots/screenshot-fullscreen.png)
 
-### Settings & PWA
+### Modals & Panels
+![About Modal](screenshots/screenshot-about-modal.png)
 ![Settings Modal](screenshots/screenshot-settings-modal.png)
-![Install Prompt](screenshots/screenshot-install-prompt.png)
+![Install Panel](screenshots/screenshot-install-panel.png)
 
 </div>
 

@@ -717,68 +717,173 @@ body {
     border-color: var(--accent-color);
 }
 
-/* PWA Install Prompt */
+/* PWA Install Prompt - Right Panel Style */
 .install-prompt {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.1) 100%);
-    backdrop-filter: blur(30px);
-    border: 1px solid rgba(99, 102, 241, 0.3);
-    border-radius: 20px;
-    padding: 2rem 2.5rem;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(15, 15, 35, 0.95) 0%, rgba(25, 25, 50, 0.95) 100%);
+    backdrop-filter: blur(20px);
+    border-left: 1px solid rgba(99, 102, 241, 0.3);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
     z-index: 1001;
-    box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.4s ease;
-    min-width: 320px;
-    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.3);
 }
 
 .install-prompt.show {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, -50%) scale(1);
+    right: 0;
 }
 
-.install-prompt i {
-    font-size: 3rem;
+.install-prompt-header {
+    padding: 2rem 2rem 1rem;
+    border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.install-prompt-header h3 {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.install-prompt-header h3 i {
     color: var(--accent-color);
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
 
-.install-prompt span {
+.install-prompt-close {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.install-prompt-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+}
+
+.install-prompt-content {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.install-prompt-icon {
+    text-align: center;
+}
+
+.install-prompt-icon i {
+    font-size: 4rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.install-prompt-text {
+    text-align: center;
+}
+
+.install-prompt-text h4 {
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+.install-prompt-text p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.install-prompt-features {
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.install-prompt-features h5 {
     color: var(--text-primary);
     font-size: 1.1rem;
     font-weight: 600;
-    line-height: 1.4;
-    margin-bottom: 0.5rem;
+    margin: 0 0 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.install-prompt .prompt-buttons {
+.install-prompt-features h5 i {
+    color: var(--accent-color);
+}
+
+.install-prompt-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.install-prompt-features li {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
     display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.install-prompt-features li i {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    width: 16px;
+}
+
+.install-prompt-buttons {
+    padding: 2rem;
+    border-top: 1px solid rgba(99, 102, 241, 0.2);
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
-    width: 100%;
-    justify-content: center;
 }
 
 .install-prompt button {
     background: var(--accent-color);
     border: none;
     color: white;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 12px;
     cursor: pointer;
-    font-size: 0.95rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
     transition: all 0.3s ease;
-    min-width: 100px;
     box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
 }
 
@@ -797,6 +902,184 @@ body {
 .install-prompt button:last-child:hover {
     background: rgba(255, 255, 255, 0.15);
     color: var(--text-primary);
+}
+
+/* About Modal Styles */
+.about-modal {
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.about-content {
+    padding: 1rem;
+}
+
+.about-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.about-logo-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.3));
+}
+
+.about-logo h3 {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.version {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.about-description {
+    margin-bottom: 2rem;
+}
+
+.about-description p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.about-features,
+.about-contact,
+.about-links,
+.about-tech {
+    margin-bottom: 2rem;
+}
+
+.about-features h4,
+.about-contact h4,
+.about-links h4,
+.about-tech h4 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.about-features h4 i,
+.about-contact h4 i,
+.about-links h4 i,
+.about-tech h4 i {
+    color: var(--accent-color);
+}
+
+.about-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-features li {
+    color: var(--text-secondary);
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.about-features li i {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    width: 16px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.contact-item i {
+    color: var(--accent-color);
+    width: 16px;
+    text-align: center;
+}
+
+.contact-item a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 8px;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: rgba(99, 102, 241, 0.15);
+    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateY(-2px);
+}
+
+.project-link i {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-item {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
 /* Reduced motion */

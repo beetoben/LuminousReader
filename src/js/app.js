@@ -58,12 +58,14 @@ class LuminousReader {
         document.getElementById('randomColor').addEventListener('click', () => this.setRandomColor());
 
         // Header controls
+        document.getElementById('about-btn').addEventListener('click', () => this.openAbout());
         document.getElementById('install-app-btn').addEventListener('click', () => this.showInstallPrompt());
         document.getElementById('fullscreen-btn').addEventListener('click', () => this.toggleFullscreen());
         document.getElementById('settings-btn').addEventListener('click', () => this.openSettings());
 
         // Modal controls
         document.getElementById('closeSettings').addEventListener('click', () => this.closeSettings());
+        document.getElementById('closeAbout').addEventListener('click', () => this.closeAbout());
 
         // Settings checkboxes
         document.querySelectorAll('.modal input[type="checkbox"]').forEach(checkbox => {
@@ -187,6 +189,16 @@ class LuminousReader {
 
     closeSettings() {
         const modal = document.getElementById('settingsModal');
+        modal.classList.remove('open');
+    }
+
+    openAbout() {
+        const modal = document.getElementById('aboutModal');
+        modal.classList.add('open');
+    }
+
+    closeAbout() {
+        const modal = document.getElementById('aboutModal');
         modal.classList.remove('open');
     }
 
@@ -388,12 +400,39 @@ class LuminousReader {
             prompt.id = 'installPrompt';
             prompt.className = 'install-prompt';
             prompt.innerHTML = `
-                <i class="fas fa-mobile-alt"></i>
-                <span>Install Luminous Reader</span>
-                <span style="font-size: 0.9rem; color: var(--text-secondary); margin-top: -0.5rem;">Add to your home screen for quick access</span>
-                <div class="prompt-buttons">
-                    <button id="installBtn">Install</button>
-                    <button id="dismissBtn">Close</button>
+                <div class="install-prompt-header">
+                    <h3>
+                        <i class="fas fa-download"></i>
+                        Install App
+                    </h3>
+                    <button class="install-prompt-close" id="dismissBtn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="install-prompt-content">
+                    <div class="install-prompt-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="install-prompt-text">
+                        <h4>Install Luminous Reader</h4>
+                        <p>Add this app to your home screen for quick access and a native app experience.</p>
+                    </div>
+                    <div class="install-prompt-features">
+                        <h5>
+                            <i class="fas fa-star"></i>
+                            Why Install?
+                        </h5>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Quick access from home screen</li>
+                            <li><i class="fas fa-check"></i> Works offline</li>
+                            <li><i class="fas fa-check"></i> Native app experience</li>
+                            <li><i class="fas fa-check"></i> No browser tabs needed</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="install-prompt-buttons">
+                    <button id="installBtn">Install Now</button>
+                    <button id="dismissBtn2">Maybe Later</button>
                 </div>
             `;
             document.body.appendChild(prompt);
@@ -404,6 +443,10 @@ class LuminousReader {
             });
 
             document.getElementById('dismissBtn').addEventListener('click', () => {
+                prompt.remove();
+            });
+
+            document.getElementById('dismissBtn2').addEventListener('click', () => {
                 prompt.remove();
             });
 
