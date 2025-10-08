@@ -1,0 +1,21 @@
+{
+  "name": "Luminous Reader - Elite Reading Lamp",
+  "short_name": "Luminous Reader",
+  "description": "Modern and elite reading lamp application - Transform your monitor into a reading light",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "theme_color": "#6366f1",
+  "background_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/src/assets/images/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
+}

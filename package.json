@@ -1,0 +1,46 @@
+{
+  "name": "luminous-reader",
+  "version": "1.0.0",
+  "description": "Modern and elite reading lamp application - Transform your monitor into a reading light",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server --port=3000 --open=/index.html",
+    "build": "echo 'No build process needed for static site'",
+    "lint": "npx htmlhint src/**/*.html && npx stylelint src/**/*.css && npx eslint src/**/*.js",
+    "format": "npx prettier --write .",
+    "deploy": "echo 'Deploy to your hosting service'"
+  },
+  "keywords": [
+    "reading-lamp",
+    "pwa",
+    "web-app",
+    "lighting",
+    "productivity",
+    "glassmorphism",
+    "modern-ui"
+  ],
+  "author": "Berkay Çiftçi <berkayyasinciftci@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1",
+    "live-server": "^1.2.2",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.11.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berkay-c/LuminousReader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/berkay-c/LuminousReader/issues"
+  },
+  "homepage": "https://github.com/berkay-c/LuminousReader#readme",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

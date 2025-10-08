@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" fill="none">
+  <defs>
+    <linearGradient id="sunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sun Icon -->
+  <circle cx="50" cy="50" r="20" fill="url(#sunGradient)"/>
+  
+  <!-- Sun Rays -->
+  <line x1="50" y1="15" x2="50" y2="25" stroke="url(#sunGradient)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="50" y1="75" x2="50" y2="85" stroke="url(#sunGradient)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="15" y1="50" x2="25" y2="50" stroke="url(#sunGradient)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="75" y1="50" x2="85" y2="50" stroke="url(#sunGradient)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="25" y1="25" x2="32" y2="32" stroke="url(#sunGradient)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="68" y1="68" x2="75" y2="75" stroke="url(#sunGradient)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="75" y1="25" x2="68" y2="32" stroke="url(#sunGradient)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="25" y1="75" x2="32" y2="68" stroke="url(#sunGradient)" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Slider -->
+  <rect x="100" y="45" width="80" height="10" rx="5" fill="#e5e7eb"/>
+  <rect x="100" y="45" width="60" height="10" rx="5" fill="#6366f1"/>
+  <circle cx="160" cy="50" r="8" fill="#6366f1"/>
+  <circle cx="160" cy="50" r="4" fill="white"/>
+  
+  <!-- Brightness Percentage -->
+  <text x="190" y="55" font-family="Arial" font-size="14" font-weight="bold" fill="#6366f1">100%</text>
+</svg>

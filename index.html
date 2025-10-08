@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous Reader - Elite Reading Lamp</title>
+    <link rel="stylesheet" href="src/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="manifest" href="public/manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Luminous Reader">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="src/assets/images/logo.svg" alt="Luminous Reader Logo" class="logo-icon">
+                <span>Luminous Reader</span>
+            </div>
+            <div class="header-controls">
+                <button class="control-btn" id="fullscreen-btn" title="Fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="control-btn" id="settings-btn" title="Settings">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Light Display -->
+        <main class="light-display" id="lightDisplay">
+            <div class="light-overlay">
+                <div class="light-info">
+                    <span class="color-hex" id="colorHex">#FFFFFF</span>
+                    <span class="brightness-level" id="brightnessLevel">100%</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- Control Panel -->
+        <div class="control-panel" id="controlPanel">
+            <div class="panel-section">
+                <h3><i class="fas fa-palette"></i> Color Control</h3>
+                <div class="color-controls">
+                    <div class="color-picker-wrapper">
+                        <input type="color" id="colorPicker" value="#ffffff">
+                        <label for="colorPicker">Choose Color</label>
+                    </div>
+                    <div class="preset-colors">
+                        <div class="preset" data-color="#ffffff" title="White - Classic Reading">
+                            <div class="preset-color" style="background: #ffffff;"></div>
+                        </div>
+                        <div class="preset" data-color="#fff8dc" title="Cream - Soft Light">
+                            <div class="preset-color" style="background: #fff8dc;"></div>
+                        </div>
+                        <div class="preset" data-color="#ffe4b5" title="Moccasin - Warm Light">
+                            <div class="preset-color" style="background: #ffe4b5;"></div>
+                        </div>
+                        <div class="preset" data-color="#f0f8ff" title="Alice Blue - Cool Light">
+                            <div class="preset-color" style="background: #f0f8ff;"></div>
+                        </div>
+                        <div class="preset" data-color="#e6e6fa" title="Lavender - Purple Tone">
+                            <div class="preset-color" style="background: #e6e6fa;"></div>
+                        </div>
+                        <div class="preset" data-color="#f5f5dc" title="Beige - Natural Light">
+                            <div class="preset-color" style="background: #f5f5dc;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <h3><i class="fas fa-sun"></i> Brightness</h3>
+                <div class="brightness-control">
+                    <input type="range" id="brightnessSlider" min="10" max="100" value="100">
+                    <span class="slider-value" id="brightnessValue">100%</span>
+                </div>
+            </div>
+
+
+            <div class="panel-section">
+                <h3><i class="fas fa-book-open"></i> Reading Modes</h3>
+                <div class="reading-modes">
+                    <button class="mode-btn active" data-mode="focus">
+                        <i class="fas fa-eye"></i>
+                        <span>Focus</span>
+                    </button>
+                    <button class="mode-btn" data-mode="relax">
+                        <i class="fas fa-leaf"></i>
+                        <span>Relax</span>
+                    </button>
+                    <button class="mode-btn" data-mode="night">
+                        <i class="fas fa-moon"></i>
+                        <span>Night</span>
+                    </button>
+                    <button class="mode-btn" data-mode="study">
+                        <i class="fas fa-book"></i>
+                        <span>Study</span>
+                    </button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- Quick Access Bar -->
+        <div class="quick-access">
+            <button class="quick-btn" id="togglePanel" title="Toggle Panel">
+                <i class="fas fa-sliders-h"></i>
+            </button>
+            <button class="quick-btn" id="powerBtn" title="Power On/Off">
+                <i class="fas fa-power-off"></i>
+            </button>
+            <button class="quick-btn" id="randomColor" title="Random Color">
+                <i class="fas fa-palette"></i>
+            </button>
+            <button class="quick-btn" id="savePreset" title="Save Settings">
+                <i class="fas fa-bookmark"></i>
+            </button>
+        </div>
+
+        <!-- Settings Modal -->
+        <div class="modal" id="settingsModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2><i class="fas fa-cog"></i> Settings</h2>
+                    <button class="close-btn" id="closeSettings">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="setting-group">
+                        <label>Auto Fullscreen</label>
+                        <input type="checkbox" id="autoFullscreen">
+                    </div>
+                    <div class="setting-group">
+                        <label>Eye Strain Reduction</label>
+                        <input type="checkbox" id="eyeStrain" checked>
+                    </div>
+                    <div class="setting-group">
+                        <label>Motion Detection</label>
+                        <input type="checkbox" id="motionDetect">
+                    </div>
+                    <div class="setting-group">
+                        <label>Keyboard Shortcuts</label>
+                        <input type="checkbox" id="keyboardShortcuts" checked>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification -->
+        <div class="notification" id="notification">
+            <i class="fas fa-info-circle"></i>
+            <span id="notificationText"></span>
+        </div>
+    </div>
+
+    <script src="src/js/app.js"></script>
+</body>
+</html>
